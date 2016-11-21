@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Pagemetum</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ pageMeta.id }}</td>
+            </tr>
+            <tr>
+                <th>Page_title</th>
+                <td>{{ pageMeta.pagetitle }}</td>
+            </tr>
+            <tr>
+                <th>Menu_title</th>
+                <td>{{ pageMeta.menutitle }}</td>
+            </tr>
+            <tr>
+                <th>Locale</th>
+                <td>{{ pageMeta.locale }}</td>
+            </tr>
+            <tr>
+                <th>Short_description</th>
+                <td>{{ pageMeta.shortdescription }}</td>
+            </tr>
+            <tr>
+                <th>Content</th>
+                <td>{{ pageMeta.content }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('mykbas_pagemeta_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('mykbas_pagemeta_edit', { 'id': pageMeta.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

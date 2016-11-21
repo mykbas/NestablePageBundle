@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>menu.page_management</source>
+                <target>Page Management</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>flash_reorder_instructions</source>
+                <target>click and drag to reorder menu</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>flash_reorder_edit_success</source>
+                <target>menu has been reordered successfully</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>one_locale_per_pagemeta_only</source>
+                <target>Sorry, there is already a pagemeta with this locale. Please delete that pagemeta or use a different locale.</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>expand_all</source>
+                <target>expand all</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>collapse_all</source>
+                <target>collapse all</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>new_page</source>
+                <target>new page</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>new_pagemeta</source>
+                <target>new pagemeta</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

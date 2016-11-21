@@ -1,0 +1,8 @@
+services:
+#    mykbas_nestable_page.example:
+#        class: Mykbas\NestablePageBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    mykbas_nestable_page.init:
+        class: Mykbas\NestablePageBundle\EventListener\ControllerListener
+        tags:
+          - { name: kernel.event_listener, event: kernel.controller, method: onKernelController}
